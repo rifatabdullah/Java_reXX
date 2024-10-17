@@ -261,3 +261,24 @@
 
 // problem - 08
 
+import java.util.Scanner;
+class p8{
+    public static void main( String [] args){
+        Scanner xc = new Scanner(System.in);
+        System.out.println("Enter your Student ID: ");
+        int a = xc.nextInt();
+        int b = a / 1000000; // year
+        int c = a / 100000;// getting first 3 digits
+        int d = c % 10;// 3rd digit
+        if ( d == 1 ){
+            System.out.println("Student Joined BRAC in Spring "+b);
+        }
+        else if ( d == 3 ){
+            System.out.println("Student Joined BRAC in Summer "+b);
+        }
+        else if ( d == 2 ){
+            System.out.println("Student Joined BRAC in Fall "+b);
+        }
+
+    }
+}
