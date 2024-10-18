@@ -261,24 +261,138 @@
 
 // problem - 08
 
-import java.util.Scanner;
-class p8{
-    public static void main( String [] args){
-        Scanner xc = new Scanner(System.in);
-        System.out.println("Enter your Student ID: ");
-        int a = xc.nextInt();
-        int b = a / 1000000; // year
-        int c = a / 100000;// getting first 3 digits
-        int d = c % 10;// 3rd digit
-        if ( d == 1 ){
-            System.out.println("Student Joined BRAC in Spring "+b);
-        }
-        else if ( d == 3 ){
-            System.out.println("Student Joined BRAC in Summer "+b);
-        }
-        else if ( d == 2 ){
-            System.out.println("Student Joined BRAC in Fall "+b);
-        }
+//import java.util.Scanner;
+//class p8{
+//    public static void main( String [] args){
+//        Scanner xc = new Scanner(System.in);
+//        System.out.println("Enter your Student ID: ");
+//        int a = xc.nextInt();
+//        int b = a / 1000000; // year
+//        int c = a / 100000;// getting first 3 digits
+//        int d = c % 10;// 3rd digit
+//        if ( d == 1 ){
+//            System.out.println("Student Joined BRAC in Spring "+b);
+//        }
+//        else if ( d == 3 ){
+//            System.out.println("Student Joined BRAC in Summer "+b);
+//        }
+//        else if ( d == 2 ){
+//            System.out.println("Student Joined BRAC in Fall "+b);
+//        }
+//
+//    }
+//}
 
+// Problem - 09
+//import java.util.Scanner;
+//class p9{
+//    public static void main( String [] args){
+//        Scanner xc = new Scanner(System.in);
+//        System.out.println("Enter your salary : ");
+//        int a = xc.nextInt();
+//        System.out.println("Enter your age : ");
+//        int b = xc.nextInt();
+//
+//        if (b >= 18 && a >= 10000){
+//            if ( a >= 10000 && a<=20000 ){
+//                System.out.println("Your tax amounts in " +(a*0.05)+ "Tk");
+//            }
+//            else if ( a > 20000 ){
+//                System.out.println("Your tax amounts in " +(a*0.10)+ "Tk");
+//            }
+//
+//        }
+//        else {
+//            System.out.println("Your tax amounts in 0 Tk");
+//        }
+//
+//    }
+//}
+
+// PROBLEM -- 10
+import java.util.Scanner;
+class p10{
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your first number: ");
+        float a = sc.nextFloat();
+        System.out.println("Enter your second number: ");
+        float b = sc.nextFloat();
+        System.out.println("Enter your third number: ");
+        float c = sc.nextFloat();
+        if ( a > b && a > c ){
+            System.out.println("Maximum number is "+a);
+            if ( c < a && c < b){
+                System.out.println("Minimum number is "+c);
+            }
+            else if( b < a && c > b){
+                System.out.println("Minimum number is "+b);
+
+            }
+        }
+        else if (b > a && b > c) {
+            System.out.println("Maximum number is " + b);
+            if (c < a && c < b) {
+                System.out.println("Minimum number is " + c);
+            } else if (a < b && a < c) {
+                System.out.println("Minimum number is " + a);
+            }
+        }
+        else if ( c > a && c > b){
+            System.out.println("Maximum number is "+c);
+            if( a < b && a < c) {
+                System.out.println("Minimum number is " + a);
+            }
+            else if( b < a && c > b){
+                System.out.println("Minimum number is "+b);
+
+            }
+        }
     }
 }
+
+//
+//import java.util.Scanner;
+//
+//class P10 {
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//
+//        // Taking three float numbers as input
+//        System.out.print("Enter first number: ");
+//        float a = sc.nextFloat();
+//
+//        System.out.print("Enter second number: ");
+//        float b = sc.nextFloat();
+//
+//        System.out.print("Enter third number: ");
+//        float c = sc.nextFloat();
+//
+//        // Initialize max and min with the first number
+//        float max = a;
+//        float min = a;
+//
+//        // Determine the maximum number
+//        if (b > max) {
+//            max = b;
+//        }
+//        if (c > max) {
+//            max = c;
+//        }
+//
+//        // Determine the minimum number
+//        if (b < min) {
+//            min = b;
+//        }
+//        if (c < min) {
+//            min = c;
+//        }
+//
+//        // Output the results
+//        System.out.println("Maximum number is " + max);
+//        System.out.println("Minimum number is " + min);
+//
+//        // Close the scanner
+//        sc.close();
+//    }
+//}
