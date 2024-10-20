@@ -138,59 +138,32 @@
 //    }
 //}
 
-// Problem - o4
-// No error
-//import java.util.Scanner;
-//  class p4{
-//      public static void main(String [] args){
-//          Scanner sx = new Scanner (System.in);
-//          System.out.println("Enter a number to check divisibility(5/7):");
-//          int a = sx.nextInt();
-//          if ( a % 5 == 0 && a % 7 == 0 ){ // this is the right logic
-//              System.out.println("Divisible by Both");
-//          }
-//          else{
-//              if ( a % 5 == 0 ){
-//                  System.out.println("Invalid: Divisible by 5 Only");
-//              }
-//              else if ( a % 7 == 0 ){
-//                  System.out.println("Invalid: Divisible by 7 Only");
-//              }
-//              else{
-//                  System.out.println("No");
-//              }
-//          }
-//
-//      }
-//  }
-//
-//
 
-// will show error while input is 105 as it takes both part 1 & 2
-//import java.util.Scanner;
-//class p4{
-//    public static void main(String [] args){
-//        Scanner sx = new Scanner (System.in);
-//        System.out.println("Enter a number to check divisibility(5/7):");
-//        int a = sx.nextInt();
-//        if ( a % 5 != 0 && a % 7 != 0 ){
-//            System.out.println("No");
-//        }
-//        else{
-//            if (a % 5 == 0 && a % 7 == 0){ // part 1
-//                System.out.println("Both");
-//            }
-//            if ( a % 5 == 0 ){ // part 2
-//                System.out.println("Invalid: Divisible by 5 Only");
-//            }
-//            else if ( a % 7 == 0 ){
-//                System.out.println("Invalid: Divisible by 7 Only");
-//            }
-//
-//            }
-//        }
-//
-//    }
+// Problem - o4
+import java.util.Scanner;
+class p4{
+    public static void main(String [] args){
+        Scanner sx = new Scanner (System.in);
+        System.out.println("Enter a number to check divisibility(5/7):");
+        int a = sx.nextInt();
+        if ( a % 5 != 0 && a % 7 != 0 ){
+            System.out.println("No");
+        }
+        else{
+            if (a % 5 == 0 && a % 7 == 0){ // part 1
+                System.out.println("Both");
+            }
+            else if ( a % 5 == 0 ){ // have to use 'else if' but if we use 'if' whether the first part true or not it'll enter in the second part
+                System.out.println("Invalid: Divisible by 5 Only");
+            }
+            else if ( a % 7 == 0 ){
+                System.out.println("Invalid: Divisible by 7 Only");
+            }
+
+            }
+        }
+
+    }
 
 // problem - 05
 //import java.util.Scanner;
@@ -479,23 +452,23 @@
 
 
 
-//Problem - 13
-import java.util.Scanner;
- class p13{
-     public static void main(String []args){
-         Scanner sc = new Scanner(System.in);
-         System.out.println("Input the 1st number: ");
-         int a = sc.nextInt();
-         System.out.println("Input the 2nd number: ");
-         int b = sc.nextInt();
-         System.out.println("Input the 3rd number: ");
-         int c = sc.nextInt();
-
-         if ( (a == b &&  b != c) || (a != b &&  b == c) ){
-             System.out.println("Neither all are equal or different");
-         }
-         else {
-             System.out.println("All numbers are different ");
-         }
-     }
-}
+////Problem - 13
+//import java.util.Scanner;
+// class p13{
+//     public static void main(String []args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Input the 1st number: ");
+//         int a = sc.nextInt();
+//         System.out.println("Input the 2nd number: ");
+//         int b = sc.nextInt();
+//         System.out.println("Input the 3rd number: ");
+//         int c = sc.nextInt();
+//
+//         if ( (a == b &&  b != c) || (a != b &&  b == c) ){
+//             System.out.println("Neither all are equal or different");
+//         }
+//         else {
+//             System.out.println("All numbers are different ");
+//         }
+//     }
+//}

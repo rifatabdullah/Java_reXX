@@ -143,7 +143,7 @@
 // class p07{
 //    public static void main(String[] args){
 //        int min = 3456789; // minutes
-////        int tdays = Math.floorDiv(min,1440); // days
+////      int tdays = Math.floorDiv(min,1440); // days
 //        int tdays = min / 1440; // its possible to do without floor division as int only OUTPUT the decimal vale
 //        int year = tdays / 365;
 //        int days = tdays % 365;
