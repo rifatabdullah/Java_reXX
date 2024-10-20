@@ -310,47 +310,46 @@
 //}
 
 // PROBLEM -- 10
-import java.util.Scanner;
-class p10{
-    public static void main(String []args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter your first number: ");
-        float a = sc.nextFloat();
-        System.out.println("Enter your second number: ");
-        float b = sc.nextFloat();
-        System.out.println("Enter your third number: ");
-        float c = sc.nextFloat();
-        if ( a > b && a > c ){
-            System.out.println("Maximum number is "+a);
-            if ( c < a && c < b){
-                System.out.println("Minimum number is "+c);
-            }
-            else if( b < a && c > b){
-                System.out.println("Minimum number is "+b);
-
-            }
-        }
-        else if (b > a && b > c) {
-            System.out.println("Maximum number is " + b);
-            if (c < a && c < b) {
-                System.out.println("Minimum number is " + c);
-            } else if (a < b && a < c) {
-                System.out.println("Minimum number is " + a);
-            }
-        }
-        else if ( c > a && c > b){
-            System.out.println("Maximum number is "+c);
-            if( a < b && a < c) {
-                System.out.println("Minimum number is " + a);
-            }
-            else if( b < a && c > b){
-                System.out.println("Minimum number is "+b);
-
-            }
-        }
-    }
-}
-
+//import java.util.Scanner;
+//class p10{
+//    public static void main(String []args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter your first number: ");
+//        float a = sc.nextFloat();
+//        System.out.println("Enter your second number: ");
+//        float b = sc.nextFloat();
+//        System.out.println("Enter your third number: ");
+//        float c = sc.nextFloat();
+//        if ( a > b && a > c ){
+//            System.out.println("Maximum number is "+a);
+//            if ( c < a && c < b){
+//                System.out.println("Minimum number is "+c);
+//            }
+//            else if( b < a && c > b){
+//                System.out.println("Minimum number is "+b);
+//
+//            }
+//        }
+//        else if (b > a && b > c) {
+//            System.out.println("Maximum number is " + b);
+//            if (c < a && c < b) {
+//                System.out.println("Minimum number is " + c);
+//            } else if (a < b && a < c) {
+//                System.out.println("Minimum number is " + a);
+//            }
+//        }
+//        else if ( c > a && c > b){
+//            System.out.println("Maximum number is "+c);
+//            if( a < b && a < c) {
+//                System.out.println("Minimum number is " + a);
+//            }
+//            else if( b < a && c > b){
+//                System.out.println("Minimum number is "+b);
+//
+//            }
+//        }
+//    }
+//}
 //
 //import java.util.Scanner;
 //
@@ -396,3 +395,107 @@ class p10{
 //        sc.close();
 //    }
 //}
+
+// Problem -- 11
+//import java.util.Scanner;
+//class p11{
+//    public static void main(String []args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter your first side of triangle: ");
+//        int a = sc.nextInt();
+//        System.out.println("Enter your second side of triangle: ");
+//        int b = sc.nextInt();
+//        System.out.println("Enter your third side of triangle: ");
+//        int c = sc.nextInt();
+//        if ( a == b && b == c && a == c){
+//            System.out.println("This is a Equilateral Triangle ");
+//        }
+//        else if (a == b || b == c || a == c ){
+//            System.out.println("This is a Isosceles Triangle ");
+//        }
+//        else {
+//            System.out.println("This is a Scalenele Triangle ");
+//        }
+//    }
+//}
+
+// Problem - 12
+//import java.util.Scanner;
+//class p12n {
+//    public static void main(String []args){
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println(" Enter the amount the customer need to pay(Taka) ");
+//        int a = sc.nextInt();
+//        System.out.println("Enter the amount, customer gave(Taka) ");
+//        int b = sc.nextInt();
+//        int c = b-a;
+//        if ( b > a ){
+//            System.out.println("The returned amount is "+c+ "taka.");
+//            int d,e,f,g,h,i,j = 0;
+//            d = c / 100; // how many 100 notes i'll need
+//            c = c % 100; // mod is used for the remaining amount
+//            e = c / 50;
+//            c = c % 50;
+//            f = c / 20;
+//            c = c % 20;
+//            g = c / 10;
+//            c = c % 10;
+//            h = c / 5;
+//            c = c % 5;
+//            i = c / 2;
+//            j = c % 2;
+//            System.out.println("100 taka note: "+d);
+//            System.out.println("50 taka note: "+e);
+//            System.out.println("20 taka note: "+f);
+//            System.out.println("10 taka note: "+g);
+//            System.out.println("5 taka coin: "+h);
+//            System.out.println("2 taka coin: "+i);
+//            System.out.println("1 taka coin: "+j);
+//
+//        } else if ( b < a ) {
+//            System.out.println("Please pay"+(a-b)+" taka more.");
+//
+//        }
+//        else {
+//            System.out.println("The returned amount is 0 taka.");
+//        }
+//
+//
+//    }
+//}
+
+/*          d = c / 100;
+            c = c % 100;
+            e = c / 50;
+            c = c % 50;
+            f = c / 20;
+            c = c % 20;
+            g = c / 10;
+            c = c % 10;
+            h = c / 5;
+            c = c % 5;
+            i = c / 2;
+            j = c % 2;       */
+
+
+
+//Problem - 13
+import java.util.Scanner;
+ class p13{
+     public static void main(String []args){
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Input the 1st number: ");
+         int a = sc.nextInt();
+         System.out.println("Input the 2nd number: ");
+         int b = sc.nextInt();
+         System.out.println("Input the 3rd number: ");
+         int c = sc.nextInt();
+
+         if ( (a == b &&  b != c) || (a != b &&  b == c) ){
+             System.out.println("Neither all are equal or different");
+         }
+         else {
+             System.out.println("All numbers are different ");
+         }
+     }
+}
