@@ -171,7 +171,7 @@
 // class p9{
 //     public static void main(String[] args){
 //         int n = 5;
-//         System.out.printf("%d x 1 = %d%n", n, n * 1);
+//         System.out.println("5 x 1 = "+(5 * 1));
 //         System.out.printf("%d x 2 = %d%n", n, n * 2);
 //         System.out.printf("%d x 3 = %d%n", n, n * 3);
 //         System.out.printf("%d x 4 = %d%n", n, n * 4);
@@ -210,15 +210,15 @@
 // }
 
  // Problem - 12
- class p12{
-     public static void main(String[] args){
-         int sID = 23221454;
-         int x = sID % 100; // mod by 10,100,1000 will gave you the last 1,2,3 digits of that number
-         int f = x % 10;  // now this will give you last digit of x
-         int s = x / 10; // this eventually give you 5.4 but as  we take this data as int it'll only give us 5
-         System.out.println(f+"\n"+s+"\n");
-     }
- }
+// class p12{
+//     public static void main(String[] args){
+//         int sID = 23221454;
+//         int x = sID % 100; // mod by 10,100,1000 will gave you the last 1,2,3 digits of that number
+//         int f = x % 10;  // now this will give you last digit of x
+//         int s = x / 10; // this eventually give you 5.4 but as  we take this data as int it'll only give us 5
+//         System.out.println(f+"\n"+s+"\n");
+//     }
+// }
 
  // Problem - 13 -- still have some problems
 // import java.util.Scanner;
@@ -238,3 +238,19 @@
 //
 //     }
 // }
+
+
+ //14
+//
+//import java.lang.Math;
+//class p19{
+//    public static void main(String [] args){
+//        int a = 8; // Base of the triangle in Hexagon;
+//        int b = 3; // Height of the triangle
+//        double c = Math.sqrt((a*a)+(b*b)); // same side of the hexagon
+//        double cir = 6*c;
+//        double area = (2.59)*(c*c);
+//        System.out.println("The area of the Hexagon is "+area+" \nand the Circumference is "+cir);
+//
+//    }
+//}F

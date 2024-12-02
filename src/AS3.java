@@ -140,30 +140,30 @@
 
 
 // Problem - o4
-import java.util.Scanner;
-class p4{
-    public static void main(String [] args){
-        Scanner sx = new Scanner (System.in);
-        System.out.println("Enter a number to check divisibility(5/7):");
-        int a = sx.nextInt();
-        if ( a % 5 != 0 && a % 7 != 0 ){
-            System.out.println("No");
-        }
-        else{
-            if (a % 5 == 0 && a % 7 == 0){ // part 1
-                System.out.println("Both");
-            }
-            else if ( a % 5 == 0 ){ // have to use 'else if' but if we use 'if' whether the first part true or not it'll enter in the second part
-                System.out.println("Invalid: Divisible by 5 Only");
-            }
-            else if ( a % 7 == 0 ){
-                System.out.println("Invalid: Divisible by 7 Only");
-            }
-
-            }
-        }
-
-    }
+//import java.util.Scanner;
+//class p4{
+//    public static void main(String [] args){
+//        Scanner sx = new Scanner (System.in);
+//        System.out.println("Enter a number to check divisibility(5/7):");
+//        int a = sx.nextInt();
+//        if ( a % 5 != 0 && a % 7 != 0 ){
+//            System.out.println("No");
+//        }
+//        else{
+//            if (a % 5 == 0 && a % 7 == 0){ // part 1
+//                System.out.println("Both");
+//            }
+//            else if ( a % 5 == 0 ){ // have to use 'else if' but if we use 'if' whether the first part true or not it'll enter in the second part
+//                System.out.println("Invalid: Divisible by 5 Only");
+//            }
+//            else if ( a % 7 == 0 ){
+//                System.out.println("Invalid: Divisible by 7 Only");
+//            }
+//
+//            }
+//        }
+//
+//    }
 
 // problem - 05
 //import java.util.Scanner;
@@ -472,3 +472,5 @@ class p4{
 //         }
 //     }
 //}
+
+
