@@ -1,29 +1,43 @@
 // 1
+
 //class p1{
 //    public static void main(String [] args){
 //        for (int i = 18; i <=  63; i = i + 9 ){
-//            System.out.print(i+" ");
+//            if ( i == 63){
+//                System.out.print(i+" ");
+//            }
+//            else{
+//                System.out.print(i+", ");
+//            }
+//
 //
 //        }
 //    }
 //}
 
 // 2
-
+//
 //class p2{
 //    public static void main(String [] args){
 //        for (int i = 18; i <= 63; i = i+9){
 //            if ( i % 2 == 0) {
-//                System.out.print(i + " ");
+//                System.out.print(i + ", ");
 //            }
 //            else if(i % 2 != 0) {
-//                System.out.print("-"+i+" ");
+//                if ( i == 63){
+//                    System.out.print("- "+i+" ");
+//                }
+//                else{
+//                    System.out.print("- "+i+", ");
+//                }
+//
 //            }
 //        }
 //    }
 //}
 
 // 3
+
 //class p3{
 //    public static void main(String [] args){
 //        int sum = 0;
@@ -39,7 +53,7 @@
 //    }
 //}
 
-// 4
+ // 4
 //class p4{
 //    public static void main(String [] args){
 //        int sum = 0;
@@ -47,10 +61,6 @@
 //            if ( i % 7 == 0 || i % 9 == 0 ){
 //                sum += i;
 //            }
-//            else{
-//                sum += 0;
-//            }
-//
 //        }
 //        System.out.println(sum);
 //    }
@@ -91,6 +101,7 @@
 //}
 
 // 7
+
 //class p7{
 //    public static void main(String [] args){
 //        int n = 6;
@@ -102,23 +113,26 @@
 //    }
 //}
 
+
 // 8
+
 //class p8{
 //    public static void main(String [] args){
 //        int sum = 0;
-//        int n = 5*2;
+//        int n = 5;
 //        System.out.println("The odd numbers are: ");
-//        for (int i = 0; i <= n; i++){
+//        for (int i = 0; i <= n*2; i++){
 //           if (i % 2 != 0){
 //               sum += i; // sum = sum + i
 //               System.out.println(i);
 //           }
 //        }
-//        System.out.println("TheSum of odd Natural Numbers up to 5 terms is: "+sum);
+//        System.out.println("The Sum of odd Natural Numbers up to 5 terms is: "+sum);
 //    }
 //}
 
 // 9
+
 //class p9{
 //    public static void main(String [] args){
 //        int sum = 0;
@@ -154,35 +168,26 @@
 //    }
 //}
 
+// 12
 
-
-
-// 15
-/* A perfect number is defined as a positive integer
-that is equal to the sum of its proper divisors,
-excluding itself. For example, the number 6 is a
-perfect number because its proper divisors are 1, 2,
-and 3, and their sum is 1+2+3 = 6 1+2+3=6. Other
-examples of perfect numbers include 28, 496, and 8128
- */
-//class p15{
+//class p12{
 //    public static void main (String [] args){
-//        int n = 6;
-//        int x = 0;
-//        for ( int i = 1; i <= (n-1); i++ ){
-//            if ( n % i == 0 ){
-//                x += i;
+//        int num = 32768;
+//        for ( int i = num; i > 0; ){
+//            int x = i % 10;
+//            i = i /10;
+//            if ( i > 0 ){
+//                System.out.print(x+", ");
 //            }
-//        }
-////        x = x - n;
-//        if ( x == n){
-//            System.out.println(n+" is a perfect number ");
-//        }
-//        else{
-//            System.out.println(n+" is not a perfect number ");
+//            else {
+//                System.out.print(x+" ");
+//            }
 //        }
 //    }
 //}
+
+
+
 
 //
 //// 12
@@ -193,7 +198,7 @@ examples of perfect numbers include 28, 496, and 8128
 //        while (num > 0){
 //            d = num % 10;
 //            num = num / 10;
-//            if ( num > 0) {
+//            if ( num > 0 ) {
 //                System.out.print(d+", ");
 //            }
 //            else {
@@ -206,18 +211,54 @@ examples of perfect numbers include 28, 496, and 8128
 
 
 // 13
-//class p13{
-//    public static void main(String [] args){
-//        int num = 32768;
-//        double d;
+
+//class xy{
+//    public static void main (String [] args){
 //        int count = 0;
+//        int num = 32768;
 //        for (int i = num; i > 0; i = i / 10){
 //            count += 1;
-//            d = Math.pow(10,(count-1));
-//            double x = num / d;
-//            System.out.println(x+" ");
 //        }
-//        System.out.println("Digits: "+count);
+//        while (num > 0){
+//            double x = Math.pow(10,(count-1));
+//            int y = num / (int) x ;
+//            num = num % (int) x ;
+//            if ( num > 0){
+//                System.out.print(y+", ");
+//            }
+//            else {
+//                System.out.print(y+" ");
+//            }
+//            count -= 1;
+//        }
+//    }
+//}
+
+
+//// 13
+//
+//class p13{
+//    public static void main (String [] args){
+//      double  num = 32768;
+//      int count = 0;
+//      double i,j = 0;
+//      for ( i = num; i > 0; i = i / 10 ){
+//          count++;
+//      }
+//      for  ( j = num; j > 0;  ){
+//          double xx = Math.pow(10,(count - 1));
+//
+//          double y = j / xx;
+//          j = j % xx;
+//          if ( j > 0 ){
+//              System.out.print(y + ", ");
+//          }
+//          else {
+//              System.out.print(y + " ");
+//          }
+//          count -= 1;
+//
+//      }
 //    }
 //}
 
@@ -234,47 +275,124 @@ examples of perfect numbers include 28, 496, and 8128
 //    }
 //}
 //
-//
-//class xy {
-//    public static void main(String[] args) {
-//        int x = 20;
-//        int y = 2;
-//        if (x < 0 || y < 0) {
-//            System.out.println("Error");
-//        } else {
-//            x = x * y;
-//            if ( x >= 2200){
-//                System.out.println("VAT APPLIED");
-//                x += x * 8 / 100;
-//
+
+
+// 15
+/* A perfect number is defined as a positive integer
+that is equal to the sum of its proper divisors,
+excluding itself. For example, the number 6 is a
+perfect number because its proper divisors are 1, 2,
+and 3, and their sum is 1+2+3 = 6 1+2+3=6. Other
+examples of perfect numbers include 28, 496, and 8128
+ */
+
+//class p15{
+//    public static void main (String [] args){
+//        int n = 6;
+//        int x = 0;
+//        for ( int i = 1; i < n; i++ ){
+//            if ( n % i == 0 ){
+//                x += i;
 //            }
-//            else {
-//                System.out.println("NO VAT");
-//            }
-//         System.out.println("Final amount "+x);
+//        }
+//        if ( x == n){
+//            System.out.println(n+" is a perfect number ");
+//        }
+//        else{
+//            System.out.println(n+" is not a perfect number ");
 //        }
 //    }
 //}
 
-class xy{
-    public static void main (String [] args){
-        int count = 0;
-        int num = 32768;
-        for (int i = num; i > 0; i =i / 10){
-            count += 1;
-        }
 
-        while (num > 0){
-            double x = Math.pow(10,(count-1));
-            int y = num / (int) x ;
-            num = num % (int) x ;
-            if ( num > 0){
-                System.out.print(y+", ");
-            }
-            else {
-                System.out.print(y+" ");
-            }
-            count -= 1;
-        }
-    }
-}
+
+
+
+
+
+
+
+
+
+// 13 modified
+
+
+//class p13 {
+//    public static void main(String[] args) {
+//        int num = 32768;
+//        int d = 1;
+//        int x = num;
+//        int count = 0;
+//
+//      for ( int i = num; i > 0; i = i / 10 ){
+//          count++;
+//      }
+//      for (int i = 1; i < count; i++) {
+//            d *= 10;
+//      }
+//      while (d > 0) {
+//            int digit = num / d;
+//            System.out.print(digit);
+//            if (d > 1) {
+//                System.out.print(", ");
+//            }
+//            num %= d;
+//            d /= 10;
+//      }
+//    }
+//}
+
+
+
+
+
+/* Find all odd divisors of N. For each odd divisor,
+multiply it by its square and calculate the cumulative product
+of all such values. Finally the program should determine
+whether the resulting product is divisible by 7 or not. */
+
+//class px{
+//    public static void main(String [] args){
+//        int n = 7;
+//        int sum = 0;
+//        for ( int i = 1; i <= n; i++){
+//            if ( n % i == 0 && i % 2 != 0){
+//                sum = sum * (i*i);
+//            }
+//        }
+//        if ( sum % 7 ==0){
+//            System.out.println(" The product is divisible by 7 ");
+//        }
+//        else{
+//            System.out.println(" The product is not divisible by 7 ");
+//        }
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
